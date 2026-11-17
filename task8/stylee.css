@@ -1,0 +1,1124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus jakarta Sans";
+}
+
+.header{
+    width: 100%;
+    padding: 32px 0;
+    background-color: #FCF2E8;
+}
+
+.container{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px ;
+    margin: auto;
+}
+.container p{
+    font-size: 28px;
+    font-weight: 600;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color:#845326;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.nav-links  :hover{
+    color: #845326;
+    border-bottom: 1px  #845326  solid;
+
+}
+ .nav-links :first-child{
+    border-bottom: 1px  #845326  solid;
+    list-style: none;
+    color: #845326;
+    font-size:14px;
+    font-weight: 600;
+}
+
+.btnn  a{
+    
+   background-color: #845326;
+   color: #f5f0f0;
+  text-decoration: none;
+   padding: 10px 24px;
+   border-radius: 12px;
+   border: none;
+   transition: 0.3s;
+  
+}
+.btnn a :hover {
+    background-color: #b6906c;
+}
+
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+    gap: 50px;
+    background-color: #FFF8F3;
+    
+}
+
+.hero-content{
+
+    width: 100%;
+
+}
+.baadg{
+    display: inline-block;
+    background-color: #F6EcE2;
+    color: #845326;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero-content h1{
+    font-family:"Plus jakarta Sans" ;
+    font-size: 64px;
+    line-height: 1.1;
+    color: #0E0402;
+    margin-bottom: 25px;
+
+}
+.hero-content p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4F4442;
+    margin-bottom: 35px;
+}
+.hero-buttonns{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 75px;
+    
+
+}
+ .btn-primary.btn-secongary{
+    text-decoration: none;
+    padding: 18px 32px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.3s;
+    color: white;
+}
+.btn-primary{
+    background-color: #2B1B17;
+    color: #ffffff;
+}
+.btn-primary:hover{
+    background-color: #845326;
+}
+.btn-secongary{
+    border: 1px solid #2B1B17;
+    color: #ffffff;
+}
+.btn-secongary:hover{
+    background-color: #835d53;
+    color:#fffcfb;
+}
+.stats{
+
+    position: relative;
+    top:280px;
+    right: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+  
+}
+.stat h2{
+   font-family:"Plus jakarta Sans" ;
+   font-size:28px;
+   color: #0E0402;
+   margin-bottom: 8px;
+}
+.stat span{
+    font-size: 12px;
+    color: #4F4442;
+}
+.hero-img{
+    width: 100%;
+    height: 480px;
+    position: relative;
+    border: 8px solid #ffffff;
+    border-radius: 8px;
+   box-shadow: 0 5px 25px  rgba(26, 25, 25, 0.12);
+
+}
+.hero-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+border-radius: 8px;
+display: block;
+}
+
+
+
+
+
+.card{
+    position: absolute;
+    bottom: 30px;
+    left: 850px;
+    background-color:  #d3c3d3;;
+    padding:15px 20px ;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    width:290px;
+    height: 80px;
+    bottom: -10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+.card span img{
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
+    margin-top: -10px ;
+
+}
+.card h3{
+font-size: 14px;
+color:#0E0402;
+margin-top: -60px;
+margin-left: 100px;
+align-items: center;
+}
+.card p{
+    font-size: 14px;
+    color:#4F4442 ;
+    margin-top: 1px;
+    margin-left: 100px;
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero-buttonns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttonns button {
+        width: 100%;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .stats {
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+    .stats h3 {
+        font-size: 18px;
+    }
+
+    .stats p {
+        font-size: 12px;
+    }
+
+}
+.text{
+    background-color: #FCF2E8;
+    margin-bottom: 35px; 
+    text-align: center;
+}
+ .text h6{
+    color: #845326;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Plus jakarta Sans";
+    margin-top: 50px;
+
+   
+  
+}
+.text h1{
+    color: #0E0402;
+    font-family:"Plus jakarta Sans" ;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+   
+}
+.text p{
+    color: #4F4442;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.box{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #FCF2E8;
+    
+
+}
+.coffee-card {
+
+    width: 373.3px;
+    background: #ffffff;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-top: 64px;
+
+}
+.card-container{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    gap:32px;
+    width: 100%;
+}
+
+/* الصورة */
+
+.image-box {
+
+    width: 100%;
+    height: 220px;
+    position: relative;
+
+}
+
+.image-box img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+/* كلمة Signature */
+
+.badge {
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #f5eee9;
+    color: #845326;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* السعر */
+
+.price {
+
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #2B1B17;
+    color: white;
+    padding: 4px 12px;
+    border-radius:4px;
+    font-weight: 600;
+
+}
+
+/* محتوى الكارد */
+
+.card-content {
+
+    padding: 24px;
+
+}
+
+.card-content h2 {
+
+    font-family:"Plus jakarta Sans";
+    font-size: 20px;
+    font-weight: 600;
+    color:  #0E0402;
+    margin-bottom: 15px;
+
+}
+
+/* الوصف */
+
+.description {
+
+    color: #4F4442;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 25px;
+
+}
+
+/* Roast Profile */
+
+.roast {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #4F4442;
+    margin-bottom: 10px;
+
+}
+
+/* الخط */
+
+.roast-line {
+
+    width: 100%;
+    height: 6px;
+    background: #e8dddd;
+    border-radius: 12px;
+
+}
+
+.roast-progress {
+
+    width: 75%;
+    height: 100%;
+    background: #845326;
+    border-radius: 12px;
+
+}
+
+/* زر الطلب */
+
+.order {
+
+    display: block;
+    text-align: center;
+    margin-top: 35px;
+    color: #0E0402;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    
+
+}
+
+.order span {
+
+    margin-left: 8px;
+
+}
+@media (max-width: 768px) {
+
+    .card-container {
+        padding: 40px 20px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .coffee-card {
+        width: 100%;
+    }
+
+    .coffee-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+}
+
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+
+    .card-content {
+        padding: 35px 15px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .coffee-card {
+        width: 100%;
+    }
+
+    .coffee-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .card-content h2 {
+        font-size: 28px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .coffee-card h3 {
+        font-size: 20px;
+    }
+
+    .coffee-card button {
+        width: 100%;
+        padding: 12px;
+    }
+
+}
+/* القسم الرئيسي */
+
+.about-section {
+
+    width: 100%;
+    min-height: 700px;
+    padding: 80px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background-color:  #FFF8F3;
+;
+}
+
+
+/* قسم الصورة */
+
+.image-container {
+
+    width: 50%;
+    height: 520px;
+    position: relative;
+
+}
+
+.image-container img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 16px;
+
+}
+
+
+/* المربع الموجود فوق الصورة */
+
+.image-label {
+
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    background-color: #2B1B17;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.image-label h2 {
+
+    font-size: 28px;
+    margin-bottom: 5px;
+
+}
+
+.image-label p {
+
+    font-size: 12px;
+
+}
+
+
+/* قسم الكتابات */
+
+.contentt {
+
+    width: 48%;
+
+}
+
+
+/* العنوان الصغير */
+
+.tag {
+
+    display: inline-block;
+    background-color: #F6EcE2;
+    color: #845326;
+    padding: 9px 20px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+
+
+/* العنوان الرئيسي */
+
+.contentt h1 {
+
+    font-size: 40px;
+    color: #0E0402;
+    margin-bottom: 25px;
+    font-family: "Plus jakarta Sans";
+
+}
+
+
+/* الوصف */
+
+.description {
+
+    color: #4F4442;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+
+}
+
+
+/* الميزات الثلاث */
+
+.feature {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 25px;
+
+}
+
+
+/* الأيقونات */
+
+.icon {
+
+    width: 40px;
+    height: 42px;
+    min-width: 45px;
+    background-color: #F6EcE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #845326;
+    font-size: 20px;
+
+}
+
+
+/* عناوين الميزات */
+
+.feature h3 {
+
+    font-size: 14px;
+    color: #0E0402;
+    margin-bottom: 7px;
+
+}
+
+
+/* وصف الميزات */
+
+.feature p {
+
+    font-size: 14px;
+    color: #4F4442;
+    line-height: 1.6;
+
+}
+
+
+/* الزر */
+
+.story-btn {
+
+    background-color: #2B1B17;
+    color: white;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+
+.story-btn:hover {
+
+    background-color: #c0a17d;
+
+}
+
+
+/* الشاشات الصغيرة */
+
+@media (max-width: 768px) {
+
+    .about-section {
+
+        flex-direction: column;
+
+        padding: 40px 5%;
+
+    }
+
+    .image-container {
+
+        width: 100%;
+
+        height: 350px;
+
+    }
+
+    .content {
+
+        width: 100%;
+
+    }
+
+    .content h1 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+/* القسم الرئيسي */
+
+.welcome {
+    width: 90%;
+
+    min-height: 630px;
+    background-color: #2B1B17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 64px 207px;
+    border-radius: 16px;
+    margin: auto;
+}
+
+/* محتوى القسم */
+
+.conteent {
+    max-width: 750px;
+    width: 100%;
+}
+
+/* الكتابة الصغيرة */
+
+.special {
+    width: 179px;
+    height: 30px;
+    color: #FFDCC2;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    margin-left: 250px;
+    background-color: #84532631; ;
+    border-radius: 12px;
+    padding: 6px 16px;
+    
+}
+
+/* العنوان الرئيسي */
+.conteent h1 {
+    color: #ffffff;
+    font-family:"Plus jakarta Sans";
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 35px;
+}
+
+/* الفقرة */
+
+ .conteent p {
+    color: #d3c3d3;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 55px;
+}
+
+/* الأزرار */
+
+.buttonss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* كود الخصم */
+
+.code {
+    color:#FFDCC2;
+    border: 1px solid #84532649;
+
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+/* زر العرض */
+
+button {
+    background-color: #845326;
+    color: white;
+    border: none;
+    padding: 12px 31px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c9a96e;
+}
+
+/* الشاشات الصغيرة */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .code,
+    button {
+        width: 100%;
+    }
+
+}
+
+.footer {
+    width: 100%;
+    background-color: #2B1B17;
+    color: white;
+    padding: 48px;
+    font-family: "Plus jakarta Sans";
+    margin-top: 100px;
+}
+
+/* الأقسام الأربعة */
+.footer-container {
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr 1.1fr 1fr;
+    gap: 60px;
+    padding-bottom: 50px;
+}
+
+/* القسم الأول */
+
+.footer-about h2 {
+    font-family: "Plus jakarta Sans";
+    font-size: 27px;
+    margin-bottom: 22px;
+    color: #FFF8F3;
+}
+
+.footer-about p {
+    color: #d3c3d3;
+    line-height: 1.7;
+    font-size: 14px;
+    max-width: 390px;
+}
+
+/* أيقونات التواصل */
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* عناوين الأقسام */
+
+.footer h3 {
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+/* الروابط */
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    color: #c5bfc0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f1ba7c;
+}
+
+/* أوقات الدوام */
+
+.footer-hours p {
+    color: #FFF8F3;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.footer-hours span {
+    color: #FFDCC2;
+    font-size: 14px;
+}
+
+/* الاشتراك */
+
+.footer-news p {
+    color: #FFF8F3;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.subscribe {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 12px;
+}
+
+.subscribe input {
+    width: 75%;
+    padding: 10px  12px;
+    background: #8174714b;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 4px 0 0 4px;
+}
+
+.subscribe input::placeholder {
+    color: #c5bfc0;
+}
+
+.subscribe button meta{
+    width: 25%;
+    background: #845326;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px 4px;
+    
+}
+
+.subscribe button  meta:hover {
+    background: #e2c09c;
+}
+
+.footer-news small {
+    color: #d3c3d3;
+    font-size: 12px;
+}
+
+/* الجزء السفلي */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #d3c3d3;
+    font-size: 14px;
+}
+
+.bottom-links {
+    display: flex;
+    gap: 35px;
+}
+
+.bottom-links a {
+    color: #d3c3d3;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.bottom-links a:hover {
+    color: #cea271;
+}
+
+/* الشاشات الصغيرة */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
